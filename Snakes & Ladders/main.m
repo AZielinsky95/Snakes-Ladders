@@ -8,23 +8,56 @@
 
 #import <Foundation/Foundation.h>
 #import "InputHandler.h"
-#import "Player.h"
+#import "PlayerManager.h"
 
 int main(int argc, const char * argv[])
 {
     @autoreleasepool
     {
-        NSLog(@"WELCOME TO SNAKES AND LADDERS! \n TYPE roll or r to roll dice");
-        Player *player = [[Player alloc] init];
+        PlayerManager *playerManager = [[PlayerManager alloc] init];
+        NSString* userInput = [NSString new];
         
-        while(![player gameOver])
+        while(![playerManager isGameOver])
         {
-            NSString* userInput = [InputHandler getUserInput];
-            
-            if([userInput isEqualToString:(@"roll")] ||
-               [userInput isEqualToString:(@"r")])
+            if(playerManager.players.count == 0)
             {
-                [player rollDice];
+                NSLog(@"WELCOME TO SNAKES AND LADDERS! \n Input # of players!");
+                userInput = [InputHandler getUserInput];
+                
+                if([userInput intValue])
+                {
+                    [playerManager createPlayers:[userInput intValue]];
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            
+            NSLog(@"TYPE roll or r to roll dice");
+            userInput = [InputHandler getUserInput];
+            userInput = [userInput lowercaseString];
+            
+            if([userInput isEqualToString:(@"roll")]||[userInput isEqualToString:(@"r")])
+            {
+                [playerManager roll];
+            }
+            else if([userInput isEqualToString:(@"quit")])
+            {
+                NSLog(@"Would you like to 'quit or 'restart' ?");
+                userInput = [InputHandler getUserInput];
+                userInput = [userInput lowercaseString];
+                
+                if([userInput isEqualToString:(@"quit")])
+                {
+                    NSLog(@"Thanks for playing!");
+                    break;
+                }
+                else if([userInput isEqualToString:(@"restart")])
+                {
+                    [playerManager gameOver];
+                    continue;
+                }
             }
         }
     }

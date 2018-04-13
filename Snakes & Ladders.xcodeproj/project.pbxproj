@@ -11,6 +11,7 @@
 		CAFBA06020811C3600B931B8 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA05F20811C3600B931B8 /* InputHandler.m */; };
 		CAFBA06320811CFF00B931B8 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA06220811CFF00B931B8 /* Dice.m */; };
 		CAFBA06620811E3000B931B8 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA06520811E3000B931B8 /* Player.m */; };
+		CAFBA06920812EAF00B931B8 /* PlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA06820812EAF00B931B8 /* PlayerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		CAFBA06220811CFF00B931B8 /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
 		CAFBA06420811E3000B931B8 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		CAFBA06520811E3000B931B8 /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		CAFBA06720812EAF00B931B8 /* PlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerManager.h; sourceTree = "<group>"; };
+		CAFBA06820812EAF00B931B8 /* PlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +53,8 @@
 		CAFBA04B20811BBE00B931B8 = {
 			isa = PBXGroup;
 			children = (
+				CAFBA06720812EAF00B931B8 /* PlayerManager.h */,
+				CAFBA06820812EAF00B931B8 /* PlayerManager.m */,
 				CAFBA06420811E3000B931B8 /* Player.h */,
 				CAFBA06520811E3000B931B8 /* Player.m */,
 				CAFBA06120811CFF00B931B8 /* Dice.h */,
@@ -134,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAFBA06920812EAF00B931B8 /* PlayerManager.m in Sources */,
 				CAFBA06620811E3000B931B8 /* Player.m in Sources */,
 				CAFBA06320811CFF00B931B8 /* Dice.m in Sources */,
 				CAFBA05820811BBE00B931B8 /* main.m in Sources */,

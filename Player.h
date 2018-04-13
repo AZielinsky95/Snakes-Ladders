@@ -13,7 +13,7 @@
 
 @property (nonatomic) NSInteger currentSquare;
 @property BOOL gameOver;
-
+@property NSString* name;
 -(void)rollDice;
 
 @end

@@ -49,7 +49,6 @@
     if(self.currentSquare >= 100)
     {
         _gameOver = YES;
-        NSLog(@"YOU WIN!");
         return;
     }
     if([_gameLogic objectForKey:@(self.currentSquare)] != nil)
