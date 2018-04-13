@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CAFBA05820811BBE00B931B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA05720811BBE00B931B8 /* main.m */; };
+		CAFBA06020811C3600B931B8 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA05F20811C3600B931B8 /* InputHandler.m */; };
+		CAFBA06320811CFF00B931B8 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA06220811CFF00B931B8 /* Dice.m */; };
+		CAFBA06620811E3000B931B8 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA06520811E3000B931B8 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		CAFBA05420811BBE00B931B8 /* Snakes & Ladders */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Snakes & Ladders"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFBA05720811BBE00B931B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CAFBA05E20811C3600B931B8 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		CAFBA05F20811C3600B931B8 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		CAFBA06120811CFF00B931B8 /* Dice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
+		CAFBA06220811CFF00B931B8 /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
+		CAFBA06420811E3000B931B8 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		CAFBA06520811E3000B931B8 /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +50,12 @@
 		CAFBA04B20811BBE00B931B8 = {
 			isa = PBXGroup;
 			children = (
+				CAFBA06420811E3000B931B8 /* Player.h */,
+				CAFBA06520811E3000B931B8 /* Player.m */,
+				CAFBA06120811CFF00B931B8 /* Dice.h */,
+				CAFBA06220811CFF00B931B8 /* Dice.m */,
+				CAFBA05E20811C3600B931B8 /* InputHandler.h */,
+				CAFBA05F20811C3600B931B8 /* InputHandler.m */,
 				CAFBA05620811BBE00B931B8 /* Snakes & Ladders */,
 				CAFBA05520811BBE00B931B8 /* Products */,
 			);
@@ -119,7 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAFBA06620811E3000B931B8 /* Player.m in Sources */,
+				CAFBA06320811CFF00B931B8 /* Dice.m in Sources */,
 				CAFBA05820811BBE00B931B8 /* main.m in Sources */,
+				CAFBA06020811C3600B931B8 /* InputHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
